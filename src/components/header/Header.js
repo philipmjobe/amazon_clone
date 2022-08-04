@@ -39,8 +39,26 @@ function Header() {
               </div>
             </Link>
           </div>
+          <div className="header__nav">
+            <Link to="/login" className="header__link">
+              <div className="header__option">
+                <span className="header__optionLineOne">Your</span>
+                <span className="header__optionLineTwo">Prime</span>
+              </div>
+            </Link>
+          </div>
+          <Link to="/checkout" className="header__link">
+            <div className="header__optionBasket">
+              {/* shopping basket icon */}
+              <ShoppingBasketIcon />
+              {/*number of items in the basket */}
+              {/* we use {basket?.length} to render the length of the basket when basket property of the state reaches the header component without this the dom will render the basket.length even when it has not reached the header compnent therby resulting to an error */}
+              <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
+            </div>
+          </Link>
         </div>
       </Link>
     </nav>
   );
 }
+export default Header;
