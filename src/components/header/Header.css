@@ -1,0 +1,21 @@
+.header{
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header__logo{
+  width: 100px;
+  margin: 0 20px;
+  margin-top: 18px;
+  object-fit: contain;
+}
+.header__optionBasket{
+  display: flex;
+  align-items: center;
+}
+.header__basketCount{
+  margin: 0px 10px;
+}
