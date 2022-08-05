@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+// import * as serviceWorker from "./serviceWorker";
 import { StateProvider } from "../src/components/stateProvider/StateProvider";
 import reducer, { initialState } from "./reducer";
 ReactDOM.render(
@@ -13,3 +13,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+export default App;
